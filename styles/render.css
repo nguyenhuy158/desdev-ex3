@@ -32,18 +32,19 @@ body textarea {
   justify-content: flex-start;
   align-items: center;
   position: relative;
+  transition: all 0.5s ease;
+  animation: slideIn 2s ease 1s;
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   background-color: #fff;
 }
-.toast::after {
-  content: "x";
-  font-size: 20px;
-  color: #cbcbcb;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 20px;
+@keyframes slideIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .toast--success {
   color: #21a67a;
@@ -53,6 +54,19 @@ body textarea {
 }
 .toast--hit {
   color: #007bc2;
+}
+.toast > .close {
+  cursor: pointer;
+  font-size: 30px;
+  color: #cbcbcb;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  transition: all 0.2s ease;
+}
+.toast > .close:hover {
+  color: #7e7e7e;
 }
 .toast > .line {
   height: calc(100% - 20px);
@@ -72,9 +86,6 @@ body textarea {
 .toast__icon {
   font-size: 26px;
   padding: 20px;
-}
-.toast__icon > .fas {
-  font-weight: 500;
 }
 .toast__title {
   text-align: left;

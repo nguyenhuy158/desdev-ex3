@@ -36,36 +36,39 @@
                     Congrats on the internet loading your request.
                 </div>
             </div>
-        </div>
-
-        <div class="toast toast--warm">
-            <div class="line line--warm"></div>
-            <div class="toast__icon">
-                <i class="far fa-bomb" style="font-weight: bold"></i>
-            </div>
-            <div class="toast__title">
-                <div class="toast__title-main">Yay! Everything worked!</div>
-                <div class="toast__title-sub">
-                    Congrats on the internet loading your request.
-                </div>
-            </div>
+            <div class="close" onclick="removeThis(this)">&times</div>
         </div>
 
         <div class="toast toast--hit">
             <div class="line line--hit"></div>
             <div class="toast__icon">
-                <i class="far fa-lightbulb"></i>
+                <i class="fas fa-lightbulb"></i>
             </div>
             <div class="toast__title">
-                <div class="toast__title-main">Yay! Everything worked!</div>
+                <div class="toast__title-main">Did you know?</div>
                 <div class="toast__title-sub">
-                    Congrats on the internet loading your request.
+                    Here is something that you might like to know.
                 </div>
             </div>
+            <div class="close" onclick="removeThis(this)">&times</div>
+        </div>
+
+        <div class="toast toast--warm">
+            <div class="line line--warm"></div>
+            <div class="toast__icon">
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <div class="toast__title">
+                <div class="toast__title-main">Uh oh, something went wrong</div>
+                <div class="toast__title-sub">
+                    Sorry! There was a problem with your request.
+                </div>
+            </div>
+            <div class="close" onclick="removeThis(this)">&times</div>
         </div>
         <!-- other/ -->
         <div></div>
-        <script src="./script/script.js"></script>
+        <script src="./scripts/script.js"></script>
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     </body>
 </html>
